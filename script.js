@@ -105,7 +105,7 @@ function configurarDiagnostico(textos) {
             const refRecomendacao = diagnosticoAtual.refRecomendacao;
             const recomendacaoHTML = textos.recomendacoes[refRecomendacao];
 
-            const resultadoHTML = `<h2>Diagnóstico Personalizado</h2><div id="diagnostico-geral" class="${getClasseEstilo(diagnosticoAtual.geral)}">${diagnosticoAtual.geral}</div><div class="pilar-resultado"><h3>Pilar 1: Monitoramento de Equipamentos</h3><p>${diagnosticoAtual.pilar1}</p></div><div class="pilar-resultado"><h3>Pilar 2: Conectividade / Internet</h3><p>${diagnosticoAtual.pilar2}</p></div><div class="pilar-resultado"><h3>Pilar 3: Manutenção Preventiva</h3><p>${diagnosticoAtual.pilar3}</p></div><div id="recomendacao-final">${recomendacaoHTML}</div>`;
+            const resultadoHTML = `<h2>Diagnóstico Personalizado</h2><div id="diagnostico-geral" class="${getClasseEstilo(diagnosticoAtual.geral)}">${diagnosticoAtual.geral}</div><div class="pilar-resultado"><h3>Pilar 1: Monitoramento</h3><p>${diagnosticoAtual.pilar1}</p></div><div class="pilar-resultado"><h3>Pilar 2: Controle de Acesso</h3><p>${diagnosticoAtual.pilar2}</p></div><div class="pilar-resultado"><h3>Pilar 3: Segurança Perimetral</h3><p>${diagnosticoAtual.pilar3}</p></div><div id="recomendacao-final">${recomendacaoHTML}</div>`;
             divDiagnostico.innerHTML = resultadoHTML;
             divDiagnostico.style.display = "block";
             gerarBtn.style.display = 'none';
